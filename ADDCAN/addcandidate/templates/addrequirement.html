@@ -100,9 +100,7 @@ h5{
   .openbtn:hover {
     background-color: #444;
   }
-  .token{
-   display:none;
-  }
+  
  </style>
   
 </head>
@@ -135,7 +133,7 @@ h5{
   <div class="container">
     <h4>Add Candidate</h4>
     <form action="#" method="POST">
-        <span> {% csrf_token %} {% load static %}</span>
+         {% csrf_token %} {% load static %}
       <div class="mb-3 row">
         <div class="col-sm-5">
             <select class="form-select" name="requirement" required>
